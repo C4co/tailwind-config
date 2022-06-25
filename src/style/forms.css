@@ -1,0 +1,118 @@
+/* form --------------------------- */
+
+.form {
+  @apply
+  border
+}
+
+/* field --------------------------- */
+
+.field {
+  @apply
+  flex
+  flex-col
+  gap-1
+  w-full
+}
+
+.field__input {
+  @apply
+  px-3
+  py-2
+  rounded
+  text-sm
+  border
+  outline-none
+  border-gray-300
+  bg-gray-100
+  placeholder-gray-500
+  text-gray-800
+
+  focus:ring-2
+  focus:border-gray-400
+  focus:ring-gray-200
+
+  dark:border-gray-600
+  dark:bg-gray-700
+  dark:placeholder-gray-400
+  dark:text-gray-50
+
+  dark:focus:border-gray-500
+  dark:focus:ring-gray-700
+}
+
+.field__input--error {
+  @apply
+  border-red-400
+}
+
+.field__label, .label {
+  @apply
+  text-xs
+  text-gray-600
+
+  dark:text-gray-400
+}
+
+.field__error-message {
+  @apply
+  text-xs
+  text-red-600
+
+  dark:text-red-400
+}
+
+.field__description {
+  @apply
+  text-xs
+  text-gray-600
+
+  dark:text-gray-400
+}
+
+/* checkbox --------------------------- */
+
+.check {
+  @apply
+  px-2
+  py-1
+  flex
+  items-center
+  gap-3
+  rounded
+  border
+  border-gray-300
+
+  dark:border-gray-700
+}
+
+.check__label {
+  @apply
+  text-sm
+  text-gray-600
+
+  dark:text-gray-400
+}
+
+.check__input:checked + .check__label {
+  @apply
+  text-blue-700
+
+  dark:text-blue-400
+}
+
+/* select --------------------------- */
+
+.select {
+  @apply
+  field__input
+  w-full
+}
+
+/* textarea --------------------------- */
+
+.textarea {
+  @apply
+  field__input
+  min-h-[100px]
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Base</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style/app.css" />
+  </head>
+  <body>
+    <main class="page page--center">
+      <div class="card">
+        <h1 class="title">Lifestyle</h1>
+        <h1 class="title text-xl">Lifestyle</h1>
+        <h1 class="title text-2xl">Lifestyle</h1>
+
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nihil
+          vel omnis nam neque iste dolorem sit eum quasi praesentium autem
+          minima repudiandae itaque porro rem, veritatis harum quae eaque.
+        </p>
+
+        <p class="text text-sm">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nihil
+          vel omnis nam neque iste dolorem sit eum quasi praesentium autem
+          minima repudiandae itaque porro rem, veritatis harum quae eaque.
+        </p>
+
+        <p class="text text-xs">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nihil
+          vel omnis nam neque iste dolorem sit eum quasi praesentium autem
+          minima repudiandae itaque porro rem, veritatis harum quae eaque.
+        </p>
+
+        <a class="link" href="#">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </a>
+
+        <a class="link text-sm" href="#">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </a>
+
+        <a class="link text-xs" href="#">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </a>
+      </div>
+
+      <div class="card">
+        <button class="btn">Button</button>
+        <button class="btn btn--success">Button success</button>
+        <button class="btn btn--info">Button info</button>
+        <button class="btn btn--danger">Button danger</button>
+        <button class="btn btn--warn">Button warn</button>
+      </div>
+
+      <div class="card">
+        <button class="btn-outline">Button bordered</button>
+        <button class="btn-outline btn-outline--success">
+          Button bordered success
+        </button>
+
+        <button class="btn-outline btn-outline--info">
+          Button bordered info
+        </button>
+
+        <button class="btn-outline btn-outline--warn">
+          Button bordered warn
+        </button>
+
+        <button class="btn-outline btn-outline--danger">
+          Button bordered danger
+        </button>
+      </div>
+
+      <div class="card">
+        <div class="field">
+          <label class="field__label" htmlFor="input"> Input label </label>
+          <input
+            name="input"
+            placeholder="ex: John Doe"
+            class="field__input"
+            type="text"
+          />
+          <span class="field__description">
+            Your username can be your email address, name, or nickname.
+            Usernames can incorporate spaces, numbers, and certain special
+            characters such as periods (.), hyphens (-), apostrophes ('),
+            underscores (_), and the @ sign.
+          </span>
+        </div>
+
+        <div class="field">
+          <label class="field__label" htmlFor="input"> Input label </label>
+          <input
+            name="input"
+            placeholder="ex: John Doe"
+            class="field__input field__input--error"
+            type="text"
+          />
+          <span class="field__error-message"> error message </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <label class="check">
+          <input type="checkbox" class="check__input" />
+          <span class="check__label">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+          </span>
+        </label>
+
+        <label class="check">
+          <input type="checkbox" class="check__input" />
+          <span class="check__label">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+          </span>
+        </label>
+
+        <label class="check">
+          <input type="checkbox" class="check__input" />
+          <span class="check__label">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+          </span>
+        </label>
+      </div>
+
+      <div class="card">
+        <textarea placeholder="textarea" class="textarea"></textarea>
+      </div>
+
+      <div class="card">
+        <label class="check">
+          <input name="radio-example" type="radio" class="check__input" />
+          <span class="check__label">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+          </span>
+        </label>
+
+        <label class="check">
+          <input name="radio-example" type="radio" class="check__input" />
+          <span class="check__label">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+          </span>
+        </label>
+
+        <label class="check">
+          <input name="radio-example" type="radio" class="check__input" />
+          <span class="check__label">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+          </span>
+        </label>
+      </div>
+
+      <div class="card">
+        <div>
+          <label htmlFor="cars" class="label"> Label </label>
+          <select name="cars" id="cars" class="select">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="alert">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+        </div>
+
+        <div class="alert alert--info">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+        </div>
+
+        <div class="alert alert--success">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+        </div>
+
+        <div class="alert alert--warn">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+        </div>
+
+        <div class="alert alert--red">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

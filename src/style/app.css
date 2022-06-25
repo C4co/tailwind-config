@@ -1,0 +1,9 @@
+@import "./containers.css";
+@import "./buttons.css";
+@import "./forms.css";
+@import "./type.css";
+@import "./alert.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
