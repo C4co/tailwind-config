@@ -8,8 +8,6 @@
   rounded
   shadow-md
   bg-gray-200
-
-  dark:bg-gray-900
 }
 
 .page--center {
@@ -23,17 +21,15 @@
 
 /* card --------------------------- */
 
-.card {
+.block {
   @apply
   p-6
   rounded
-  shadow
+  shadow-lg
   w-full
   max-w-[700px]
   flex
   flex-col
   gap-4
   bg-white
-
-  dark:bg-gray-800
 }

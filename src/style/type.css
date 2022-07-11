@@ -4,8 +4,6 @@
   @apply
   text-gray-800
   font-bold
-
-  dark:text-gray-100
 }
 
 /* text --------------------------- */
@@ -13,8 +11,6 @@
 .text {
   @apply
   text-gray-600
-
-  dark:text-gray-400
 }
 
 /* link --------------------------- */
@@ -23,6 +19,4 @@
   @apply
   text-blue-700
   hover:underline
-
-  dark:text-blue-400
 }
