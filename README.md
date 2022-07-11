@@ -132,6 +132,7 @@
 ### Plugins
 
 [Tailwind Prose](https://tailwindcss.com/docs/typography-plugin)
+[Tailwind Forms](https://github.com/tailwindlabs/tailwindcss-forms)
 
 ---
 
