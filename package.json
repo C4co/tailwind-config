@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "tailwind style base",
   "scripts": {
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "dev": "parcel src/index.html src/alpine.html",
+    "build": "parcel build src/index.html src/alpine.html"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@alpinejs/collapse": "^3.10.3",
+    "alpinejs": "^3.10.3",
     "parcel": "^2.6.2"
   },
   "devDependencies": {

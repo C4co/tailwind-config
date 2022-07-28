@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alpine</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style/app.css" />
+    <link rel="stylesheet" href="./style/imports.css" />
+
+    <script type="module" src="./app.js"></script>
+  </head>
+
+  <body>
+    <main class="page page--center">
+      <section class="wrapper">
+        <p class="text-gray-700">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta
+          voluptatum rerum, dolorum, unde dolores expedita repellat assumenda
+          dolore nesciunt tempora vero fuga nostrum iure, voluptates quae nihil
+          cupiditate nemo eaque.
+        </p>
+      </section>
+
+      <section class="wrapper">
+        <h1 class="title">Expander</h1>
+
+        <div
+          class="bg-gray-200 overflow-hidden rounded text-gray-700"
+          x-data="{ open: false }"
+        >
+          <span
+            class="px-4 py-2 text-sm transition-all hover:bg-gray-300 cursor-pointer font-bold block w-full"
+            @click="open = !open"
+          >
+            Expand
+          </span>
+
+          <div x-show="open" x-collapse>
+            <div class="px-4 py-2">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellendus explicabo vel, cupiditate perferendis recusandae,
+                voluptas voluptate repellat ex cum in similique expedita
+                inventore fuga corporis, itaque mollitia sapiente saepe
+                doloribus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
