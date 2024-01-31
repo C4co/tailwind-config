@@ -48,6 +48,57 @@
           </div>
         </div>
       </section>
+
+      <section class="wrapper">
+
+        <h1 class="title">Tabs</h1>
+
+        <div x-data="{ activeTab: 'tab1' }">
+          <ul class="flex border-b border-slate-300 gap-2">
+            <li
+              @click="activeTab = 'tab1'"
+            >
+              <a
+                href="#"
+                class="inline-block py-2 px-4 bg-gray-200 text-gray-700 font-semibold rounded-t-md"
+                x-bind:class="{'bg-slate-300': activeTab === 'tab1'}"
+                >Tab 1</a
+              >
+            </li>
+            <li
+              @click="activeTab = 'tab2'"
+            >
+              <a
+                href="#"
+                class="inline-block py-2 px-4 bg-gray-200 text-gray-700 font-semibold rounded-t-md"
+                x-bind:class="{'bg-slate-300': activeTab === 'tab2'}"
+                >Tab 2</a
+              >
+            </li>
+            <li
+              @click="activeTab = 'tab3'"
+            >
+              <a
+                href="#"
+                class="inline-block py-2 px-4 bg-gray-200 text-gray-700 font-semibold rounded-t-md"
+                x-bind:class="{'bg-slate-300': activeTab === 'tab3'}"
+                >Tab 3</a
+              >
+            </li>
+          </ul>
+
+          <div class="bg-white p-4">
+            <div x-show="activeTab === 'tab1'">
+              <p>Tab 1 content</p>
+            </div>
+            <div x-show="activeTab === 'tab2'">
+              <p>Tab 2 content</p>
+            </div>
+            <div x-show="activeTab === 'tab3'">
+              <p>Tab 3 content</p>
+            </div>
+          </div>
+      </section>
     </main>
   </body>
 </html>
